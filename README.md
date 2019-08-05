@@ -132,6 +132,16 @@ ATOK は元々の機能として「日本語での絵文字入力」が可能な
 
 
 
+## Developer notes
+
+```
+docker build -t emoji:latest .
+docker run --rm -i -t -v ${PWD}:/work emoji:latest
+docker run --rm -i -t -v ${PWD}:/work --entrypoint=sh emoji:latest
+```
+
+
+
 <!-- Internal References -->
 [Issue]: https://github.com/peaceiris/emoji-ime-dictionary/issues
 [Pull Requests]: https://github.com/peaceiris/emoji-ime-dictionary/pulls
